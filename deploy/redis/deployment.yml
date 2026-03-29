@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: redis
+    tier: front
   name: redis
 spec:
   replicas: 1
