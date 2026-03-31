@@ -5,6 +5,7 @@ metadata:
     app: redis
     tier: front
   name: redis
+  namespace: instavote
 spec:
   ports:
   - name: "6379"

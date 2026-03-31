@@ -2,27 +2,28 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: redis
+    app: vote
     tier: front
-  name: redis
+  name: vote
+  namespace: instavote
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
-      app: redis
+      app: vote
   strategy: {}
   template:
     metadata:
       labels:
-        app: redis
+        app: vote
     spec:
       containers:
-      - image: redis:alpine
-        name: redis
+      - image: schoolofdevops/vote:v2
+        name: vote
         resources:
           requests:
-            memory: "64Mi"
-            cpu: "250m"
-          limits:
+            cpu: "100m"
             memory: "128Mi"
-            cpu: "500m"
+          limits:
+            cpu: "250m"
+            memory: "256Mi"
