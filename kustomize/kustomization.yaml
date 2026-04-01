@@ -4,4 +4,3 @@ resources:
   - redis/deployment.yml
   - redis/service.yml
   - vote/deployment.yml
-  - vote/service.yml
