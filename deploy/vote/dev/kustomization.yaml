@@ -6,7 +6,7 @@ resources:
 namespace: instavote
 
 images:
-  - name: schoolofdevops/vote-xxxxx
+  - name: schoolofdevops/vote
     newTag: v4
 
 replicas:
