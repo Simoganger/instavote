@@ -11,7 +11,7 @@ images:
 
 replicas:
   - name: vote
-    count: 2
+    count: 4
 
 configMapGenerator:
   - name: vote
