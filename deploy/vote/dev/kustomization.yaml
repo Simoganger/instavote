@@ -5,6 +5,7 @@ resources:
 namespace: instavote
 images:
 - name: schoolofdevops/vote
+  newName: simoganger/vote
   newTag: main-e8a06fef-1775480931 #{"$imagepolicy": "flux-system:vote:tag"}
 replicas:
 - name: vote
